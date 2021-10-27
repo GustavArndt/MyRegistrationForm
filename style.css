@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: #FAFDF6;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: linear-gradient(#EEEFA8, #DDD92A);
+    width: 550px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.container .title {
+    flex-grow: 1;
+}
+
+.container .title .label {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    top: 30%;
+    border-width: 0px 0px 1px 0px;
+    border-color: black;
+    border-style: solid;
+    margin: 0px 130px;
+}
+
+.container form {
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 80px;
+}
+
+.container form {
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+div .tois {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.tois input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.tois label {
+    margin-top: 13px;
+}
+
+div .radio-input {
+    font-size: 15px;
+    margin: 0px 15px;
+}
+
+.radio-input label {
+    margin-left: 20px;
+}
+
+div .regButton {
+    height: 50px;
+    align-self: center;
+    text-align: center;
+    width: 400px;
+}
+
+.regButton button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid;
+}
