@@ -100,6 +100,59 @@ div .regButton {
     border: 1px solid;
 }
 
+.name-error {
+    border-width: 1px !important;
+    border-color: rgb(255, 0, 0) !important;
+    border-style: solid !important;
+}
+
+.email-error {
+    border-width: 1px !important;
+    border-color: rgb(255, 0, 0) !important;
+    border-style: solid !important;
+}
+
+.password-error {
+    border-width: 1px !important;
+    border-color: rgb(255, 0, 0) !important;
+    border-style: solid !important;
+}
+
+.confPass-error {
+    border-width: 1px !important;
+    border-color: rgb(255, 0, 0) !important;
+    border-style: solid !important;
+}
+
+.name-ok {
+    border-width: 1px !important;
+    border-color: rgb(88, 156, 10) !important;
+    border-style: solid !important;
+}
+
+.email-ok {
+    border-width: 1px !important;
+    border-color: rgb(88, 156, 10)!important;
+    border-style: solid !important;
+}
+
+.password-ok {
+    border-width: 1px !important;
+    border-color: rgb(88, 156, 10) !important;
+    border-style: solid !important;
+}
+
+.confPass-ok {
+    border-width: 1px !important;
+    border-color: rgb(88, 156, 10) !important;
+    border-style: solid !important;
+}
+
+.not-matched {
+    font-size: 15px;
+    color: red;
+}
+
 @media(max-width: 580px) {
     .container {
         width: 80%;
