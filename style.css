@@ -99,3 +99,23 @@ div .regButton {
     font-weight: bold;
     border: 1px solid;
 }
+
+@media(max-width: 580px) {
+    .container {
+        width: 80%;
+    }
+    .container .title .label {
+        position: relative;
+        margin: 0px 20%;
+    }
+    div .regButton {
+        height: 50px;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+    }
+    div .radio-input {
+        font-size: 60%;
+        margin: 0px 3px;
+    }
+}
