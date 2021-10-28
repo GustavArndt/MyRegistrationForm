@@ -1,9 +1,9 @@
+//variables
 const name = document.getElementById('fname')
 const email = document.getElementById('email')
 const password = document.getElementById('password')
 const confPass = document.getElementById('confPass')
 const tois = document.querySelector('.tois')
-
 const form = document.getElementById('form')
 
 var nameStatus = false
@@ -12,17 +12,11 @@ var passwordStatus = false
 var confStatus = false
 var messageAppended = false
 
-form.addEventListener('submit', (e) => {
-    //console.log('form enviado')
-    //alert("form enviado")
-    e.preventDefault()
 
-    fillUpCheck()
-})
-
+//functions
 function reset() {
     addEventListener('keydown', (e) => {
-        console.log('tecla apertdada')
+
         if (messageAppended == true) {
             const message = document.querySelector('.not-matched')
             tois.removeChild(message)
@@ -32,11 +26,10 @@ function reset() {
     })
 }
 
-reset()
+
 
 function nameCheck() {
     if (name.value == '') {
-        console.log('nome invalido')
         name.placeholder = "invalid username !!!"
         name.className = 'name-error'
     } else {
@@ -48,7 +41,6 @@ function nameCheck() {
 
 function emailCheck() {
     if (email.value == '') {
-        console.log('nome invalido')
         email.placeholder = "invalid email !!!"
         email.className = 'email-error'
     } else {
@@ -71,7 +63,7 @@ function passwordCheck() {
 function confPassCheck() {
     if (password.value == confPass.value) {
         confPass.className = 'conPass-ok'
-        console.log('igual')
+
     } else {
         const message = document.createElement('div')
         message.className = 'not-matched'
@@ -79,10 +71,8 @@ function confPassCheck() {
         tois.appendChild(message)
         messageAppended = true
         confPass.className = 'conPass-error'
-        console.log('igual')
     }
 }
-
 
 function fillUpCheck() {
     nameCheck()
@@ -90,3 +80,13 @@ function fillUpCheck() {
     passwordCheck()
     confPassCheck()
 }
+
+
+//Program looping
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    fillUpCheck()
+})
+
+reset()
